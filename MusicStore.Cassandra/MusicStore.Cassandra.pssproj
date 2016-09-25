@@ -40,6 +40,9 @@
     <Compile Include="music\types\founded_info.cql" />
     <Compile Include="Script.ps1" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modeling\readme.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
 </Project>
