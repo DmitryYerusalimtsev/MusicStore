@@ -28,10 +28,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Modeling\" />
+    <Folder Include="music\" />
+    <Folder Include="music\tables\" />
+    <Folder Include="music\types\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modeling\ER Diagram.xml" />
     <Compile Include="Modeling\logical model.xml" />
+    <Compile Include="music\music_keyspace.cql" />
+    <Compile Include="music\tables\artists_info.cql" />
+    <Compile Include="music\types\founded_info.cql" />
     <Compile Include="Script.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
