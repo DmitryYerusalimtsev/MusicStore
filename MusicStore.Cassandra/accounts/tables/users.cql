@@ -1,0 +1,12 @@
+USE accounts;
+
+CREATE TABLE IF NOT EXISTS users(
+	user_id uuid,
+	first_name text,
+	last_name text,
+	e-mail text,
+	logon_name text,
+	password_hash text,
+	PRIMARY KEY ((user_id), first_name, last_name)
+)
+WITH comment = 'Q9: Find information about my account.';
