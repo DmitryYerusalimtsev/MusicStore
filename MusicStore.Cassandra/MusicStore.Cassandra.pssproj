@@ -27,17 +27,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="accounts\" />
+    <Folder Include="accounts\tables\" />
     <Folder Include="Modeling\" />
     <Folder Include="music\" />
     <Folder Include="music\tables\" />
     <Folder Include="music\types\" />
+    <Folder Include="music\views\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accounts\accounts_keyspace.cql" />
+    <Compile Include="accounts\tables\purchased_albums_by_user.cql" />
+    <Compile Include="accounts\tables\users.cql" />
     <Compile Include="Modeling\ER Diagram.xml" />
     <Compile Include="Modeling\logical model.xml" />
     <Compile Include="music\music_keyspace.cql" />
+    <Compile Include="music\tables\albums.cql" />
     <Compile Include="music\tables\artists_info.cql" />
+    <Compile Include="music\tables\songs.cql" />
     <Compile Include="music\types\founded_info.cql" />
+    <Compile Include="music\views\albums_by_artist.cql" />
+    <Compile Include="music\views\artists.cql" />
     <Compile Include="Script.ps1" />
   </ItemGroup>
   <ItemGroup>
