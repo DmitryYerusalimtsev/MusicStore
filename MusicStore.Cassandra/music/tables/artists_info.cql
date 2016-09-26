@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS artists_info(
 	name text,
 	description text,
 	founded frozen<founded_info>,
-	genres list<text>,
+	genres set<text>,
 	language text,
 	logo blob,
 	PRIMARY KEY (artist_id )
