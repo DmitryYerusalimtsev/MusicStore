@@ -39,6 +39,7 @@
     <Compile Include="accounts\accounts_keyspace.cql" />
     <Compile Include="accounts\tables\purchased_albums_by_user.cql" />
     <Compile Include="accounts\tables\users.cql" />
+    <Compile Include="create.ps1" />
     <Compile Include="Modeling\ER Diagram.xml" />
     <Compile Include="Modeling\logical model.xml" />
     <Compile Include="music\music_keyspace.cql" />
@@ -48,7 +49,6 @@
     <Compile Include="music\types\founded_info.cql" />
     <Compile Include="music\views\albums_by_artist.cql" />
     <Compile Include="music\views\artists.cql" />
-    <Compile Include="deploy.sh" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Modeling\readme.txt" />
