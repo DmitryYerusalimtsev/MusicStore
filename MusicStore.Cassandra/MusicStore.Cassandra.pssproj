@@ -48,7 +48,7 @@
     <Compile Include="music\types\founded_info.cql" />
     <Compile Include="music\views\albums_by_artist.cql" />
     <Compile Include="music\views\artists.cql" />
-    <Compile Include="Script.ps1" />
+    <Compile Include="deploy.sh" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Modeling\readme.txt" />

@@ -7,4 +7,5 @@ SELECT artist_id,
 	logo
 FROM artists_info
 WHERE artist_id IS NOT NULL
+AND name IS NOT NULL
 PRIMARY KEY ((artist_id), name);
