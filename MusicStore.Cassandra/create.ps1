@@ -17,35 +17,30 @@ $keyspaceDirs = @(
 # Executes all CQL scripts in specified directory.
 function Execute-CQL([string]$dir)
 {
-	Get-ChildItem $dir -Filter *.cql | 
-	Foreach-Object {
-        $filePath = Join-Path $dir $_
-
-        $command = "$cqlsh -f '$filePath' $server $port"
-        $job = Start-Job { iex "$args" } -ArgumentList $command
-
-        Wait-Job $job        
-		echo $("$filePath DONE")
-	}
-}
-
-function Execute-All-Scripts([string]$dir)
-{
-    $dirExists = Test-Path $dir
+	$dirExists = Test-Path $dir
     if($dirExists)
     {
-	    Execute-CQL -dir $dir
-    }
+		Get-ChildItem $dir -Filter *.cql | 
+		Foreach-Object {
+			$filePath = Join-Path $dir $_
+
+			$command = "$cqlsh -f '$filePath' $server $port"
+			$job = Start-Job { iex "$args" } -ArgumentList $command
+
+			Wait-Job $job        
+			echo $("$filePath DONE")
+		}
+	}
 }
 
 foreach ($ks in $keyspaces) 
 {
 	$scriptDir = Join-Path $PSScriptRoot.ToString() $ks
-	Execute-All-Scripts -dir $scriptDir
+	Execute-CQL -dir $scriptDir
 
 	foreach($ksDir in $keyspaceDirs)
 	{
 		$scrDir = Join-Path $scriptDir $ksDir
-        Execute-All-Scripts -dir $scrDir
+        Execute-CQL -dir $scrDir
 	}
 }
