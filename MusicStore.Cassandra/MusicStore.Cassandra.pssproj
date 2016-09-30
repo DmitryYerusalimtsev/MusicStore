@@ -39,6 +39,7 @@
     <Compile Include="accounts\accounts_keyspace.cql" />
     <Compile Include="accounts\tables\purchased_albums_by_user.cql" />
     <Compile Include="accounts\tables\users.cql" />
+    <Compile Include="accounts\tables\users_credentials.cql" />
     <Compile Include="create.ps1" />
     <Compile Include="Modeling\ER Diagram.xml" />
     <Compile Include="Modeling\logical model.xml" />
