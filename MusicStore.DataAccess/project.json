@@ -5,9 +5,11 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+
   "frameworks": {
     "net46": { }
   },
+
   "dependencies": {
     "Microsoft.Orleans.OrleansCodeGenerator.Build": "1.2.3"
   }

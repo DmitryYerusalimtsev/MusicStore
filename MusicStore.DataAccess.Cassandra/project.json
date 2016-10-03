@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "description": "MusicStore.DataAccess.Cassandra Class Library",
+  "authors": [ "dmytro.yerusalimtsev" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "frameworks": {
+    "net46": { }
+  },
+
+  "dependencies": {
+    "CassandraCSharpDriver": "3.0.9",
+    "Microsoft.Orleans.OrleansCodeGenerator.Build": "1.2.3",
+    "MusicStore.DataAccess": "1.0.0-*"
+  }
+}
