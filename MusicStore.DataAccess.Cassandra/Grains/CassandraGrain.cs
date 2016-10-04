@@ -1,7 +1,7 @@
 ﻿using Cassandra;
 using Orleans;
 
-namespace MusicStore.DataAccess.Cassandra
+namespace MusicStore.DataAccess.Cassandra.Grains
 {
     public abstract class CassandraGrain : Grain
     {
