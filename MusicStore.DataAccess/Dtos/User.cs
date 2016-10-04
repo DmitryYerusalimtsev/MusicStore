@@ -1,11 +1,10 @@
 ﻿using System;
+using MusicStore.DataAccess.Dtos.Prototypes;
 
 namespace MusicStore.DataAccess.Dtos
 {
-    public class User
+    public class User : BaseDto<Guid>
     {
-        public Guid UserId { get; set; }
-
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

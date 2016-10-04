@@ -1,13 +1,11 @@
 ﻿using System;
+using MusicStore.DataAccess.Dtos.Keys;
+using MusicStore.DataAccess.Dtos.Prototypes;
 
 namespace MusicStore.DataAccess.Dtos
 {
-    public class Song
+    public class Song : BaseDto<SongKey>
     {
-        public Guid ArtistId { get; set; }
-
-        public string Name { get; set; }
-
         public string AlbumName { get; set; }
 
         public string ArtistName { get; set; }
